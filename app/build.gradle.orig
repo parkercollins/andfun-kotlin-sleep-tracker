@@ -22,11 +22,19 @@ apply plugin: 'kotlin-kapt'
 apply plugin: 'androidx.navigation.safeargs'
 
 android {
+<<<<<<< HEAD
     compileSdkVersion 31
     defaultConfig {
         applicationId "com.example.android.trackmysleepquality"
         minSdkVersion 19
         targetSdkVersion 31
+=======
+    compileSdkVersion 30
+    defaultConfig {
+        applicationId "com.example.android.trackmysleepquality"
+        minSdkVersion 19
+        targetSdkVersion 30
+>>>>>>> Step.01-Exercise-Create-Night-Data-Entity
         versionCode 1
         versionName "1.0"
         multiDexEnabled true
@@ -43,10 +51,13 @@ android {
     // Enables data binding.
     buildFeatures {
         dataBinding true
+<<<<<<< HEAD
     }
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8
+=======
+>>>>>>> Step.01-Exercise-Create-Night-Data-Entity
     }
 }
 
@@ -82,8 +93,19 @@ dependencies {
     implementation "androidx.room:room-ktx:$version_room"
 
 
+    // ViewModel and LiveData
+    implementation "androidx.lifecycle:lifecycle-viewmodel-ktx:$version_lifecycle"
+
+    // Kotlin Extensions and Coroutines support for Room
+    implementation "androidx.room:room-ktx:$version_room"
+
+
     // Testing
+<<<<<<< HEAD
     testImplementation 'junit:junit:4.13'
+=======
+    testImplementation 'junit:junit:4.12'
+>>>>>>> Step.01-Exercise-Create-Night-Data-Entity
     androidTestImplementation 'androidx.test.ext:junit:1.1.1'
     androidTestImplementation 'androidx.test.espresso:espresso-core:3.2.0'
 }
