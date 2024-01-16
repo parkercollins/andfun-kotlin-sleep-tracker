@@ -64,7 +64,7 @@ class SleepTrackerViewModel(
      * If there are any nights in the database, show the CLEAR button.
      */
     val clearButtonVisible = nights.map {
-        it?.isNotEmpty()
+        it.isNotEmpty()
     }
 
     /**
